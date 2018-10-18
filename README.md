@@ -17,5 +17,8 @@ Network automation Container with PyCharm
 ### 4- stop the container:
 ```docker stop pycharm```
 
-### 5- start the container:
-```docker start pycharm```
+### 5- start the container & access a bash session:
+```
+docker start pycharm
+docker exec -ti pycharm /bin/bash
+```
