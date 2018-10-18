@@ -22,3 +22,9 @@ Network automation Container with PyCharm
 docker start pycharm
 docker exec -ti pycharm /bin/bash
 ```
+
+### 6- Stop & remove the container:
+```
+docker stop `docker ps | grep -i 'pycharm' | awk '{print $1}'`
+docker rm `docker ps -a | grep -i 'pycharm' | awk '{print $1}'`
+```
